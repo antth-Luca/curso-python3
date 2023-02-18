@@ -1,13 +1,14 @@
-n = int(input('Qual número você quer a tabuada? '))
-n2 = n*2
-n3 = n*3
-n4 = n*4
-n5 = n*5
-n6 = n*6
-n7 = n*7
-n8 = n*8
-n9 = n*9
-n10 = n*10
+num = int(input('Qual número você quer a tabuada? '))
 msm = str('TABUADA')
-print('{:=^28}'.format(msm))
-print(n, n2, n3, n4, n5, n6, n7, n8, n9, n10)
+print('{:=^12}'.format(msm))
+print('{} x  {} = {}'.format(num, 1, num*1))
+print('{} x  {} = {}'.format(num, 2, num*2))
+print('{} x  {} = {}'.format(num, 3, num*3))
+print('{} x  {} = {}'.format(num, 4, num*4))
+print('{} x  {} = {}'.format(num, 5, num*5))
+print('{} x  {} = {}'.format(num, 6, num*6))
+print('{} x  {} = {}'.format(num, 7, num*7))
+print('{} x  {} = {}'.format(num, 8, num*8))
+print('{} x  {} = {}'.format(num, 9, num*9))
+print('{} x {} = {}'.format(num, 10, num*10))
+print('='*12)

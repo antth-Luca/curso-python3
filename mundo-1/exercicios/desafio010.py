@@ -1,6 +1,7 @@
-msm = ('CONVERSOR DE REAIS')
 print('Consigo calcular quantos dólares você pode comprar!')
-r = float(input('Primeiro, quantos reais você tem? '))
+r = float(input('Primeiro, quantos reais você tem? R$'))
 d = r / 5.17
-print('{:=^30}'.format(msm))
-print('Você pode comprar {:.2f} dólares'.format(d))
+msm = ('CONVERSOR DE MOEDA')
+print('{:=^26}'.format(msm))
+print('Você pode comprar U${:.2f}!'.format(d))
+print('='*26)
