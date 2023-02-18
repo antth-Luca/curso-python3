@@ -1,7 +1,5 @@
-msm = ('CALCULADORA DE TINTA')
-print('{:=^45}'.format(msm))
-h = int(input('Quantos metros de altura tem a sua parede? '))
-l = int(input('Quantos metros de comprimento tem essa parede? '))
-a = h * l
-t = a / 2
-print('Sua parede de {}mX{}m tem {}m² de área e será\nnecessário {}L de tinta para pintá-la!'.format(h, l, a, t))
+msm = ('CALCULADORA DE DESCONTO')
+print('{:=^40}'.format(msm))
+p = float(input('Qual é o preço do seu produto? '))
+np = p - (p * (5 / 100))
+print('O seu produto custava {:.2f} e seu preço\nagora, com desconto, é de {:.2f}!'.format(p, np))

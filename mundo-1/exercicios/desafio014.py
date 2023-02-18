@@ -1,6 +1,3 @@
-msm = ('CALCULADORA DE SALÁRIOS')
-print('{:=^40}'.format(msm))
-s = float(input('Qual é o seu salário atual? '))
-a = s * (15/100)
-ns = s + a
-print('Agora é de {:.2f}. Você foi promovido!'.format(ns))
+c = float(input('Quantos graus celsius está hoje? '))
+f = c * 9 / 5 + 32
+print('{}°C equivale a {:.1f}°F!'.format(c, f))
