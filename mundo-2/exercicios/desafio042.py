@@ -7,7 +7,7 @@ if a > abs(b - c) and a < (b + c) and b > abs(a - c) and b < (a + c) and c > abs
     print('As retas podem formar um triângulo', end=' ')
     if a == b == c == a:
         print('\033[32mEQUILÁTERO\033[m!')
-    elif a == b or b == c or c == a:
+    elif a == b and a != c or b == c and b != a or c == a and c != b:
         print('\033[32mISÓCELES\033[m!')
     elif a != b != c != a:
         print('\033[32mESCALENO\033[m!')

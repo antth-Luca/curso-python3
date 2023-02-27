@@ -4,6 +4,7 @@ vCasa = float(input('Muito bem, {}, qual é o valor da casa que pretende comprar
 vSal = float(input('Qual é o valor do seu salário? \033[32mR$\033[m'))
 periodo = int(input('Em quantos \033[36manos\033[m você pretende pagar o valor do empréstimo? '))
 parcela = vCasa / (periodo * 12)
+print('A prestação seria de R${:.2f}'.format(parcela))
 if parcela <= (vSal * 0.3):
     print('Tudo bem, seu empréstimo de R${:.2f} para pagar em {} anos está \033[33maprovado\033[m!'.format(vCasa, periodo))
 else:
