@@ -3,14 +3,15 @@ idade = [' ', ' ', ' ', ' ']
 sexo = [' ', ' ', ' ', ' ']
 s_idade = 0
 nome_maisVelho = ' '
-posicao_maisVelho = int('')
+posicao_maisVelho = int('100')
 mocas = 0
 
 for c in range(0, 4):
-    nome[c] = str(input('Qual é o {}° nome? '.format(c+1))).strip().capitalize()
+    print('======== {}° Pessoa ========'.format(c + 1))
+    nome[c] = str(input('Qual é o {}° nome? '.format(c + 1))).strip().capitalize()
     idade[c] = int(input('Quantos anos tem {}? '. format(nome[c])))
     s_idade += idade[c]
-    sexo[c] = str(input('E qual o sexo dele(a)? [M]para masculino/[F]para feminino\n '))
+    sexo[c] = str(input('E qual o sexo dele(a)?\n[M]para masculino/[F]para feminino: ')).strip().upper()
 print('A média de idade dessas pessoas é de {}'.format(s_idade / 4))
 
 for i in range(0, 4):
@@ -21,6 +22,7 @@ for i in range(0, 4):
         else:
             if idade[i] > idade[posicao_maisVelho]:
                 nome_maisVelho = nome[i]
+                posicao_maisVelho = i
 print('O homes mais velho é seu {} com {} anos de idade'.format(nome_maisVelho, idade[posicao_maisVelho]))
 
 for x in range(0, 4):
