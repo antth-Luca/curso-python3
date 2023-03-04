@@ -19,3 +19,4 @@ print('Encerrando...')
 sleep(1.5)
 print('Programa encerrado!')
 print(40 * '=')
+#existe a função factorial do módulo math
