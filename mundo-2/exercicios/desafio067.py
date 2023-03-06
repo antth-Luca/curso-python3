@@ -3,7 +3,7 @@ cont = 1
 print('{:^100}'.format('TABUADA INFINITA'))
 print(100 * '=')
 while True:
-    num = int(input('Digite um número para ver sua tabuada (números negativos para encerrar o programa: '))
+    num = int(input('Digite um número para ver sua tabuada (números negativos para encerrar o programa): '))
     if num < 0:
         break
     else:
