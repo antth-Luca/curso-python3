@@ -1,13 +1,14 @@
 tupla = tuple(int(input(f'Digite o {c + 1}° valor: ')) for c in range(0, 4))
 
-cont = 0
-while True:
-    while True:
-        if tupla[cont] % 2 == 0:
-            tupla_pares = tuple(tupla[cont])
+print(f'\nO número 9 apareceu {tupla.count(9)} vezes')
 
+if 3 in tupla:
+    print('O primeiro valor 3 está na {tupla.index(3) + 1}° posição')
+else:
+    print('Não há valores 3')
 
-
-print(f'''O número 9 apareceu {tupla.count(9)}
-O primeiro valor 3 foi encontrado na {tupla.index(3)}° posição
-''')
+print('Números pares digitados: ', end='')
+for x in range(0, 4):
+    if tupla[x] % 2 == 0:
+        print(tupla[x], end=' - ')
+print('ACABOU!')
