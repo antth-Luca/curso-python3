@@ -3,7 +3,7 @@ tupla = tuple(int(input(f'Digite o {c + 1}° valor: ')) for c in range(0, 4))
 print(f'\nO número 9 apareceu {tupla.count(9)} vezes')
 
 if 3 in tupla:
-    print('O primeiro valor 3 está na {tupla.index(3) + 1}° posição')
+    print(f'O primeiro valor 3 está na {tupla.index(3) + 1}° posição')
 else:
     print('Não há valores 3')
 

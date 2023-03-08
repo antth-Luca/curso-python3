@@ -11,3 +11,6 @@ for i in range(16, 20):
 print('\n')
 
 print(f'A Chapecoense está em {tabela.index("Chapecoense") + 1}° lugar')
+print('\n')
+
+print(f'Os times em ordem alfabética são: {sorted(tabela)}')

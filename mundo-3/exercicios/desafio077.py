@@ -1,10 +1,7 @@
 palavras = ['astorga', 'caneta', 'caderno', 'caminhonete', 'calendario']
+for p in palavras:
+    print(f'\nNa palavra {p.upper()} temos:', end=' ')
+    for letra in p:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' - ')
 
-vogais = ('a', 'e', 'i', 'o', 'u')
-
-for word in range(0, 5):
-    print(f'\nVogais da palavra "{palavras[word]}":', end=' ')
-    for v in range(0, 5):
-        if vogais[v] in palavras[word]:
-            print(f'{vogais[v]}', end=' - ')
-    print('Fim palavra!')
