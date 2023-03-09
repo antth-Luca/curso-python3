@@ -1,4 +1,6 @@
 valores = list(int(input(f'Digite o {i + 1}° valor: ')) for i in range(0, 5))
+maximo = max(valores)
+minimo = min(valores)
 print(f'\n{valores}')
-print(f'O maior valor é {max(valores)} e aparece na posição ...')
-print(f'O menor valor é {min(valores)} e aparece na posição ...')
+print(f'O maior valor é {maximo} e aparece na {valores.index(maximo) + 1}° posição')
+print(f'O menor valor é {minimo} e aparece na {valores.index(minimo) + 1}° posição')
