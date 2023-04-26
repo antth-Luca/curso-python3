@@ -1,10 +1,12 @@
-def leiaInt(apoioSTR):
+def leiaInt(msg):
     acerto = False
-    while acerto:
-        resp = input(f'{apoioSTR}')
-        if resp.isdigit() == True and resp.isnumeric() == True and type(resp) == int:
+    while acerto != True:
+        resp = str(input(msg))
+        if resp.isnumeric():
             resp = int(resp)
             acerto = True
+        else:
+            print('ERRO! Digite um número inteiro válido.')
     return resp
 
 
